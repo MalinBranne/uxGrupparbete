@@ -2,24 +2,14 @@
 /// doesn't output css
 /// setts up the project.
 @import 'utilities/utilities_index';
+
 // BASE:
 // site-wide constant, resets, typography
 @import 'base/base_index';
-//MODULES
-//buttons
+
+// MODULES:
+// buttons
 @import 'modules/modules_index';
 
-//
 // LAYOUT:
 @import 'layout/layout_index';
-// Constant on all sites, or site specifics.
-//@import 'layout/layout_index';
-
-
-
-//*
-
-body
-{background-color: #efecca;
-
-}

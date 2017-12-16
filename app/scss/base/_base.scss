@@ -1,5 +1,4 @@
-
-//Modern border-box applied everywhere.
+// Modern border-box applied everywhere.
 html {
   box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ html {
 body{
   color: map-get($color, bright);
   background: map-get($color, accent1);
-  @include page-bg ('../images/beaver.jpg');
 }
 
 body a:link{
