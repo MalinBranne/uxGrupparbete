@@ -14,6 +14,7 @@ html {
 body {
     color: map-get($color, bright);
     background: map-get($color, accent1);
+    font-family: map-get($text, body);
     font-size: map-get($text, body-size);
 }
 
