@@ -2,13 +2,13 @@
 
 /// Button placeholder
 %btn {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    color: white;
-    text-decoration: none;
-    padding: 5%;
-    margin: 10px;
-    font-family: "Poiret One", cursive;
-    font-size: 1.5em;
+	background: #B6D7B9;
+	font-family: 'Spectral SC';
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 70px;
+	border-radius: 40px;
+	border: none;
+	box-shadow: 6px 3px 10px black;
 }
