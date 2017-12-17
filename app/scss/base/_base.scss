@@ -1,30 +1,41 @@
 // Modern border-box applied everywhere.
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // inherit box-sizing
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 // set upp body color
-body{
-  color: map-get($color, bright);
-  background: map-get($color, accent1);
+body {
+    color: map-get($color, bright);
+    background: map-get($color, accent1);
+    font-size: map-get($text, body-size);
 }
 
-body a:link{
-  text-decoration: none;
+body a:link {
+    text-decoration: none;
 }
 
 img {
-  width: 100%;
-  height: auto;		
+    width: 100%;
+    height: auto;
 }
 
+h2 {
+    font-family: map-get($text, headline);
+    font-size: map-get($text, headline-size);
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-
+a {
+    color: map-get($color-defs, link);
+}
