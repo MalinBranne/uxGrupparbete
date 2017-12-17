@@ -1,13 +1,16 @@
 /// @author Sohail Hasware
 /// Fonts
 @import url('https://fonts.googleapis.com/css?family=Barlow|Indie+Flower|Spectral+SC');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /// Text setup
 $text: (
   body: ('Barlow', sans-serif),
   body-weight: 400,
+  body-size: 20pt,
   headline: ('Spectral SC', serif),
   headline-weight: 600,
+  headline-size: 40pt,
   cite: ('Indie Flower', cursive),
   cite-weight: 400,
 ) !default;
@@ -36,6 +39,7 @@ $color-defs: (
   footer-text: map-get($color, bright),
 
   text: map-get($color, dark),
+  link: map-get($color, accent2),
 
   button-default: map-get($color, accent4),
   button-default-text: map-get($color, bright),
