@@ -15,27 +15,3 @@
     }
 }
 
-/// Mixin for page background
-/// @param {url} $imagepath - set the url of the page-bg
-@mixin page-bg($imagepath,$bgrepeat:no-repeat,$bgattachment:fixed,$bgsize:cover) {
-    color: map-get($color, bright);
-    background: map-get($color, accent1);
-    background-image: url($imagepath);
-    background-repeat: $bgrepeat;
-    background-attachment: $bgattachment;
-    background-size: $bgsize;
-}
-
-/// Mixin for buttons
-@mixin button-bg($bg) {
-    background: $bg;
-    @extend %btn;
-    &:hover {
-        background: darken($bg, 8%);
-        transition: all 0.3s ease;
-    }
-    &:active {
-        background: darken($bg, 25%);
-    }
-}
-
