@@ -39,7 +39,7 @@ footer {
         ul {
             margin-top: 2em;
             display: grid;
-            grid-gap: 1em;
+            grid-row-gap: 1em;
             grid-template: 1fr 1fr / 1fr 1fr;
 
             /* Desktop version */
@@ -63,8 +63,14 @@ footer {
 
         /* Social icons */
         .fa {
-            padding: 0.5em;
+            padding: 0.2em;
             font-size: 3em;
+            
+            /* Desktop version */
+            @include respond-to("small") {
+                padding: 0.5em;
+
+            }
         }
     }
 }
