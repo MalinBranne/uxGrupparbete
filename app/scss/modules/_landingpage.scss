@@ -79,12 +79,17 @@
             grid-row: 2;
             grid-column: 1;
             color: white;
+            text-shadow: 2px 2px black;
             align-self: flex-end;
             margin: 0;
+            font-size: 130%;
         }
         .card-info {
             display: none;
         }
+    }
+    button {
+        @extend %btn;
     }
     /* Desktop version */
     @include respond-to("large") {
@@ -112,5 +117,20 @@
                 justify-content: space-around;
             }
         }
+    }
+}
+
+/*Quote only visible on desktop*/
+.index-bottom {
+    display: none;
+
+    /* Desktop version */
+    @include respond-to("large") {
+        display: flex;
+        align-items: center;
+        height: 425px;
+        padding: 2em;
+        margin: 10% 0;
+        @include page-bg("../images/filterimg.jpg") 
     }
 }
