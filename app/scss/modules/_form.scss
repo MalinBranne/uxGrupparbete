@@ -1,14 +1,30 @@
 .form {
+    padding-top: 1em;
     background: map-get($color-defs, form);
     border: 5px solid map-get($color, bright);
+    text-align: center;
+
+    input[type="text"] {
+        width: 250px;
+        padding: 0.3em;
+        margin: 0.3em;
+        border-radius: 0.5em;
+        border-style: none;
+        border: 1px solid grey;
+    }
+
+    /* Desktop version */
+    @include respond-to("large") {
+        /* Replace border with image */
+        border: none;
+        background: url("../images/filterimg.jpg");
+        /* Increase input field size */
+        input[type="text"] {
+            width: 350px;
+        }
+    }
 
     button {
-        background: map-get($color-defs, button-default);
-        color: map-get($color-defs, button-default-text);
-        
-        box-shadow: 5px 5px 10px map-get($color, dark);
-        padding: 1em;
-        border-radius: 2em;
-        border-style: none;
+        @extend %btn;
     }
 }
