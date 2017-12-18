@@ -1,0 +1,96 @@
+*{list-style: none;
+text-decoration: none; }
+
+
+    
+ header
+ 
+ {
+     background:url('../img/växjö.jpg') no-repeat;
+     background-size:cover;  
+ width: 100%;
+ height: 50vh;
+ margin-bottom: 0px;
+   
+     
+    
+     
+ }  
+
+    nav {
+        width: 100%;
+        font-size: 0.7em;
+        background: #102542;
+        .triggs {
+          display: none;
+          position: absolute; }
+        label {
+          position: relative;
+          cursor: pointer;
+          font-size: 150%; 
+        color: white;
+    
+   }
+        
+         ul {
+          display: none;
+          margin-left: 10px;
+          margin-top: 0px;
+          padding-bottom: 20px;
+           }
+           ul li {
+            color: white;
+            margin-top: 20px;
+           
+            }
+            ul a {color: white;}
+            
+        
+        
+       
+        .triggs:checked ~ ul, .main_nav .triggs:checked ~ ul ul {
+          display: block !important; }
+         a:hover {
+          color:#efecca; }
+        }
+
+
+@include respond-to("large") {
+
+    
+
+    
+
+    header
+    { height: 80vh;}
+
+
+nav { margin-top: 0px;
+        width: 100%; 
+        
+       
+       .navlabel {
+        display: none; }
+        ul {display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+grid-gap: 0px;}
+
+li:nth-child(1)
+{grid-column:1/2;
+grid-row: 1/2;}
+li:nth-child(2)
+{grid-column:2/4;
+grid-row: 1/2;}
+li:nth-child(3)
+{grid-column:4/5;
+grid-row: 1/2;}
+li:nth-child(4)
+{grid-column:8/9;
+grid-row: 1/2;}
+li:nth-child(5)
+{grid-column:9/11;
+grid-row: 1/2;}
+
+     }
+
