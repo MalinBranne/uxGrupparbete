@@ -1,0 +1,14 @@
+.form {
+    background: map-get($color-defs, form);
+    border: 5px solid map-get($color, bright);
+
+    button {
+        background: map-get($color-defs, button-default);
+        color: map-get($color-defs, button-default-text);
+        
+        box-shadow: 5px 5px 10px map-get($color, dark);
+        padding: 1em;
+        border-radius: 2em;
+        border-style: none;
+    }
+}
