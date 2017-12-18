@@ -1,8 +1,6 @@
 # Gulp Starter 
 
-Install sassdoc globally:
-`npm install sassdoc -g`
-clone https://github.com/mig-25/base_project.git
-Remember to run the `npm install` command after cloning this repo :) 
-
-
+1. Clone project
+2. Run "npm install"
+3. Run "gulp"
+4. Enjoy :)
