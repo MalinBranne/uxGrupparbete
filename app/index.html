@@ -15,8 +15,46 @@
 
 <body>
 
-  <!--Header with navbar here-->
-  <!--End header-->
+  <!--HEADER can be found in _headernav.scss-->
+  <header>
+
+  </header>
+  <!--
+    NAVBAR
+  -->
+  <nav>
+
+    <input class="triggs" type="checkbox" id="navbutton">
+    <label for="navbutton" class="navlabel">
+      <a> &#9776</a>
+    </label>
+
+
+
+    <ul>
+      <li>
+        <a href="index.html">Hem</a>
+      </li>
+
+      <li>
+        <a href="lediga.html">Lediga Bostäder</a>
+      </li>
+      <li class="active">
+        <a href=about.html "">Om Oss</a>
+      </li>
+
+      <li>
+        <a href="#">Logga In</a>
+      </li>
+      <li>
+        <a href="#">Registrera Dig</a>
+      </li>
+
+    </ul>
+    <!-- main_menu-->
+
+  </nav>
+  <!-- End navbar-->
 
   <!-- 
     MAIN CONTENT
@@ -27,11 +65,12 @@
     <h1>Välkommen</h1>
 
     <p class="info">
-      Vivamus risus orci, iaculis euismod eleifend non, varius eget nulla. 
+      Vivamus risus orci, iaculis euismod eleifend non, varius eget nulla.
     </p>
 
     <p class="more-info">
-      Donec iaculis maximus finibus. Fusce tempor lobortis est, nec rhoncus erat vehicula sed. Nullam non tempus diam, sit amet lobortis sapien. Nunc placerat scelerisque nibh, ac rhoncus augue pharetra nec. 
+      Donec iaculis maximus finibus. Fusce tempor lobortis est, nec rhoncus erat vehicula sed. Nullam non tempus diam, sit amet
+      lobortis sapien. Nunc placerat scelerisque nibh, ac rhoncus augue pharetra nec.
     </p>
 
     <img src="../images/container-complex.jpg" alt="Containerlägenheter">
@@ -40,19 +79,112 @@
   <!--Offers-->
   <section class="offers">
     <h2>Lediga bostäder</h2>
-    <a href="#" class="rent-card">
-      <img src="../images/container1.jpg" alt="Containerlägenhet">
-      <h2>Furutåvägen 2</h2>
-    </a>
-    <a href="#" class="rent-card">
+
+    <!--Containers-->
+    <div class="category">
+      <h3>Containrar</h3>
+      <svg height="1" width="90vw">
+        <line x1="0" y1="0" x2="90vw" y2="0"></line>
+      </svg>
+    </div>
+
+    <div class="container">
+      <a href="#" class="rent-card">
+        <img src="../images/container1.jpg" alt="Containerlägenhet">
+        <h2>Furutåvägen 2</h2>
+
+        <div class="card-info">
+
+          <div class="card-meta">
+            <div class="size">
+              13 m
+              <sup>2</sup>
+            </div>
+
+            <div class="price">
+              3100 kr/mån
+            </div>
+          </div>
+
+          <p>
+            Suspendisse congue congue neque ut pulvinar. Sed ut luctus mi. Sed eget odio tellus. Ut sit amet dolor tellus.
+          </p>
+        </div>
+      </a>
+
+      <a href="#" class="rent-card">
         <img src="../images/container2.jpg" alt="Containerlägenhet">
         <h2>Furutåvägen 3</h2>
+
+        <div class="card-info">
+
+          <div class="card-meta">
+            <div class="size">
+              13 m
+              <sup>2</sup>
+            </div>
+
+            <div class="price">
+              3100 kr/mån
+            </div>
+          </div>
+
+          <p>
+            Suspendisse congue congue neque ut pulvinar. Sed ut luctus mi. Sed eget odio tellus. Ut sit amet dolor tellus.
+          </p>
+        </div>
       </a>
+    </div>
+
+    <!--Flats-->
+    <div class="category">
+      <h3>Lägenheter</h3>
+      <svg height="1" width="90vw">
+        <line x1="0" y1="0" x2="90vw" y2="0"></line>
+      </svg>
+    </div>
+
+    <div class="container">
       <a href="#" class="rent-card">
-          <img src="../images/flat1.jpg" alt="Containerlägenhet">
-          <h2>Furutåvägen 4</h2>
-        </a>
+        <img src="../images/flat1.jpg" alt="Lägenhet">
+        <h2>Furutåvägen 4</h2>
+
+        <div class="card-info">
+
+          <div class="card-meta">
+            <div class="size">
+              35 m
+              <sup>2</sup>
+            </div>
+
+            <div class="price">
+              6300 kr/mån
+            </div>
+          </div>
+
+          <p>
+            Suspendisse congue congue neque ut pulvinar. Sed ut luctus mi. Sed eget odio tellus. Ut sit amet dolor tellus.
+          </p>
+        </div>
+
+      </a>
+    </div>
+    <button>Alla bostäder</button>
   </section>
+
+  <div class="index-bottom">
+    <div class="cite">
+
+      <div class="sentence">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet consectetur repellat accusantium molestiae iusto quis. Autem possimus exercitationem rem culpa ad corporis tempore perspiciatis?
+      </div>
+
+      <div class="person">
+        Fattig Student
+      </div>
+
+    </div>
+  </div>
   <!--End main content-->
 
   <!--
@@ -75,16 +207,16 @@
       <!-- Navigation -->
       <ul class="navigation">
         <li>
-          <a href="">Lediga bostäder</a>
+          <a href="lediga.html">Lediga bostäder</a>
         </li>
         <li>
-          <a href="">Registrering</a>
+          <a href="reg.html">Registrering</a>
         </li>
         <li>
-          <a href="">Om oss</a>
+          <a href="about.html">Om oss</a>
         </li>
         <li>
-          <a href="">Mina sidor</a>
+          <a href="#">Mina sidor</a>
         </li>
       </ul>
 
