@@ -1,0 +1,59 @@
+#watch {
+    background: map-get($color-defs, header);
+    color: map-get($color-defs, header-text);
+    width: 272px;
+    margin: 0 auto;
+
+    .time {
+        color: map-get($color, accent3);
+        text-align: right;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 35pt;
+        line-height: 1em;
+        margin: 0;
+    }
+ 
+    .apartments {
+        padding-bottom: 1px;
+
+        li {
+            background: #3f3858;
+            height: 100px;
+            margin: 16px;
+            padding: 5px;
+            padding-left: 20px;
+
+            &:nth-child(1) {
+                h4::before {
+                    content: "• ";
+                }
+            }
+
+            /* Example of marked interest */
+            &:nth-child(2) {
+                border-left: 8px solid map-get($color, accent4);
+                padding-left: 12px;
+            }
+
+            a {
+                color: map-get($color-defs, header-text);
+                font-size: 12pt;
+                width: 300px;
+                
+                h4 {
+                    margin: 0;
+                    font-size: 20pt;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
