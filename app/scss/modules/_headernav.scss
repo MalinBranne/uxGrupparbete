@@ -74,7 +74,7 @@ nav { margin-top: 0px;
         ul {display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-grid-gap: 0px;}
+grid-gap: 10px;}
 
 li:nth-child(1)
 {grid-column:1/2;

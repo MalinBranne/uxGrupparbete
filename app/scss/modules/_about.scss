@@ -68,6 +68,8 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        @include page-bg("/img/filterimg.jpg")
+        
     }
     img {
         grid-row: 1/2;
@@ -129,13 +131,14 @@ body {
             order: 1;
         }
         .abouttext {
+            
             order: 2;
             
         }
         .citat {
             visibility: hidden;
             margin-bottom: 0px;
-            @include page-bg("/img/filterimg.jpg")
+           
         }
     }
 }
