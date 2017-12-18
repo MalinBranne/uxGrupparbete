@@ -2,13 +2,13 @@
 
 /// Button placeholder
 %btn {
-	background: #B6D7B9;
-	font-family: 'Spectral SC';
-	color: white;
-	font-size: 20px;
-	width: 200px;
-	height: 70px;
-	border-radius: 40px;
-	border: none;
-	box-shadow: 6px 3px 10px black;
+    background: map-get($color-defs, button-default);
+    color: map-get($color-defs, button-default-text);
+    font-family: map-get($text, headline);
+    box-shadow: 5px 5px 10px map-get($color, dark);
+    width: 250px;
+    height: 80px;
+    border-radius: 2em;
+    border-style: none;
+    margin-top: 1em;
 }

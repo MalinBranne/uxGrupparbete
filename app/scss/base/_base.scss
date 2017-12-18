@@ -32,7 +32,12 @@ h1 {
     color: map-get($color, dark);
     font-family: map-get($text, cite);
     font-weight: map-get($text, cite-weight);
-    font-size: map-get($text, cite-size-big);
+    font-size: map-get($text, cite-size);
+    text-align: center;
+    /* Desktop version */
+    @include respond-to("small") {
+        font-size: map-get($text, cite-size-big);
+    }
 }
 
 h2 {
@@ -45,10 +50,20 @@ h2 {
     }
 }
 
+/* Citation */
 .cite {
-    font-family: map-get($text, cite);
-    font-weight: map-get($text, cite-weight);
-    font-size: map-get($text, cite-size);
+    .sentence {
+        font-family: map-get($text, cite);
+        font-weight: map-get($text, cite-weight);
+        font-size: map-get($text, cite-size);
+    }
+
+    .person {
+        text-align: right;
+        &:before {
+            content: "- ";
+        }
+    }
 }
 
 ul {
