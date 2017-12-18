@@ -24,7 +24,7 @@ body
 
     nav {
         width: 100%;
-        font-size: 1em;
+        font-size: 0.7em;
         background: #102542;
         .triggs {
           display: none;
@@ -63,6 +63,8 @@ body
 {display: flex;
 flex-direction: column;
 align-items: center;
+max-width:70%;
+margin: 0 auto;
 }
 
 .h1top
@@ -109,9 +111,10 @@ height: auto;}
 
     
 
-    max-width:70%;
-
     
+
+    header
+    { height: 80vh;}
 
 
 nav { margin-top: 0px;
