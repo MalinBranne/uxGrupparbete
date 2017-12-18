@@ -103,25 +103,19 @@ gulp.task('louis', function() {
     timeout: 60,
     url: 'http://localhost:3000',
     performanceBudget: {
-      requests: 10,
-      headersSize: 80,
-      cssSize: 19000,
-      jsSize: 2000,
-      consoleMessages: 3,
-      imageSize: 700000,
-      domContentLoaded: 2000,
-      smallestLatency: 1000,
-      medianLatency: 10,
-      slowestResponse: 1000,
-      timeToFirstImage: 700
-      
+      requests: 196,
+      headersSize: 101781,
+      bodySize: 4277416,
+      cssSize: 1096513,
+      imageSize: 2046759,
+      domContentLoaded: 6948,
+      smallestLatency: 16,
+      medianLatency: 683,
+      slowestResponse: 5795,
+      timeToFirstImage: 6867
     }
   });
 });
-
-
- 
-
 
 // Build Sequences
 // ---------------

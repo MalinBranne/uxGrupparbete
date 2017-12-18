@@ -10,9 +10,12 @@ $text: (
   body-size: 20pt,
   headline: ('Spectral SC', serif),
   headline-weight: 600,
-  headline-size: 40pt,
+  headline-size: 20pt,
+  headline-size-big: 40pt,
   cite: ('Indie Flower', cursive),
   cite-weight: 400,
+  cite-size: 30pt,
+  cite-size-big: 50pt,
 ) !default;
 
 
@@ -32,14 +35,17 @@ $color: (
 
 /// Color def map for page-layout using color map
 $color-defs: (
+  body: map-get($color, main),
+  text: map-get($color, dark),
+  link: map-get($color, accent2),
+
   header: map-get($color, accent5),
   header-text: map-get($color, bright),
 
   footer: map-get($color, accent5),
   footer-text: map-get($color, bright),
 
-  text: map-get($color, dark),
-  link: map-get($color, accent2),
+  form: map-get($color, main),
 
   button-default: map-get($color, accent4),
   button-default-text: map-get($color, bright),
